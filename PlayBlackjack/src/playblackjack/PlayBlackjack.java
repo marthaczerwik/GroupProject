@@ -37,11 +37,6 @@ public class PlayBlackjack {
 
         for (int i = 0; i < ROUNDS; i++) {
             playOneRound(i);
-            
-            if (p2.getBalance() == 0.0) {
-                System.out.println("You lost your money");
-                break;
-            }
         }
     }
 
@@ -268,7 +263,7 @@ public class PlayBlackjack {
                     continueToAsk = false;
                     
                 } catch (InputMismatchException ex) {
-                    System.out.println("The bet amout should be positive number");
+                    System.out.println("The bet amount should be positive number");
                 } catch (Exception ex) {
                     System.out.println("The bet amount should be less than the balance");
                 }

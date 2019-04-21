@@ -2,7 +2,8 @@ package playblackjack;
 import java.util.ArrayList;
 public abstract class Player {
 
-	protected String name;
+	private String playerID;
+        protected String name;
         protected double balance;
         
         int[][] hands = new int[4][13];

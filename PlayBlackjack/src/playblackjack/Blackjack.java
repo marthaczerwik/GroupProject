@@ -15,4 +15,14 @@ public class Blackjack extends Game {
 	public Blackjack(String gameName) {
             super(gameName);
 	}
+
+	public void play() {
+		// TODO - implement Blackjack.play
+		throw new UnsupportedOperationException();
+	}
+
+	public void declareWinner() {
+		// TODO - implement Blackjack.declareWinner
+		throw new UnsupportedOperationException();
+	}
 }

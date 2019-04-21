@@ -7,10 +7,11 @@ import java.util.ArrayList;
  */
 public abstract class Game {
     private String gameName;//the title of the game
-    private ArrayList <Player> players = new ArrayList();// the players of the game
+    private ArrayList <Player> players;// the players of the game
     
     public Game(String givenName) {
         this.gameName = givenName;
+        players = new ArrayList();
     }
 
     /**
@@ -40,4 +41,19 @@ public abstract class Game {
     {
         this.players.add(players);
     }
+    
+    /**
+     * Play the game. This might be one method or many method calls depending
+     * on your game.
+     */
+    public abstract void play();
+    
+    /**
+     * When the game is over, use this method to declare and display a winning
+     * player.
+     */
+    public abstract void declareWinner();
+
+   
+    
 }//end class
