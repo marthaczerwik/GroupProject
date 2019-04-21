@@ -153,7 +153,7 @@ public class PlayBlackjack {
         System.out.println("Dealer Stands");
     }
 
-    private void declareWinner(int situation) {
+    public void declareWinner(int situation) {
         int sumDealer = deck.returnCurrentHandValue(1);
             int sumPlayer = deck.returnCurrentHandValue(2);
         
